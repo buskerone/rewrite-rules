@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {"source": "/admin/", "destination": "https://admin-buskerone-app.vercel.com/"},
+    {"source": "/admin/:match*", "destination": "https://admin-buskerone-app.vercel.com/:match*"},
+    {"source": "/", "destination": "https://buskerone-app.vercel.com/"},
+    {"source": "/:match*", "destination": "https://buskerone-app.vercel.com/:match*"}
+  ]
+}
