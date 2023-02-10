@@ -1,6 +1,6 @@
 {
   "rewrites": [
-    {"source": "/app/", "destination": "https://admin-buskerone-app.vercel.app/"},
-    {"source": "/", "destination": "https://buskerone-app.vercel.app/"}
+    {"source": "/", "destination": "https://buskerone-app.vercel.app/"},
+    {"source": "/app/", "destination": "https://admin-buskerone-app.vercel.app/"}
   ]
 }
