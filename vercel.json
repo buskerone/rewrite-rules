@@ -1,8 +1,18 @@
 {
   "rewrites": [
-    {"source": "/app/:slug", "destination": "https://admin-buskerone-app.vercel.app/:slug"},
     {"source": "/app/", "destination": "https://admin-buskerone-app.vercel.app/"},
-    {"source": "/:match*", "destination": "https://buskerone-app.vercel.app/:match*"},
-    {"source": "/", "destination": "https://buskerone-app.vercel.app/"}
+    {
+      "source": "/app/:slug",
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "(?<slug>.*)"
+        }
+      ],
+      "destination": "https://admin-buskerone-app.vercel.app/:slug"
+    },
+    {"source": "/", "destination": "https://buskerone-app.vercel.app/"},
+    {"source": "/:match*", "destination": "https://buskerone-app.vercel.app/:match*"}
   ]
 }
