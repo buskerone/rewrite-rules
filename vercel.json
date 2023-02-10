@@ -1,5 +1,9 @@
 {
   "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "/:path*"
+    },
     {"source": "/app", "destination": "https://admin-buskerone-app.vercel.app/"},
     {
       "source": "/app/:slug",
