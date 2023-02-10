@@ -5,8 +5,8 @@
       "destination": "/:path*"
     },
     {
-      "source": "/app/:slug",
-      "destination": "https://admin-buskerone-app.vercel.app/:slug"
+      "source": "/app/:path*",
+      "destination": "https://admin-buskerone-app.vercel.app/:path*"
     }
   ]
 }
